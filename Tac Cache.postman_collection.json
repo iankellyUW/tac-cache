@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "139aa81e-987d-4182-9442-d575d9da0042",
+		"name": "Tac Cache",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22373195"
+	},
+	"item": [
+		{
+			"name": "localhost:3001/api/tac/get",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/tac/get",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tac",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/api/tac",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\": 1,\r\n    \"val\": {\r\n        \"first\": \"this\",\r\n        \"second\": \"is\",\r\n        \"third\": 1,\r\n        \"fourth\": \"possible\",\r\n        \"fifth\": [\r\n            {\r\n                \"value\": \"isn't it\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/api/tac",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3001/api/tac/delete/all",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"val\": \"THIS IS A VALUE\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3001/api/tac/delete/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tac",
+						"delete",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
